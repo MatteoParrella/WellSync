@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellSync - Wellness & AI</title>
+    <meta name="description"
+        content="WellSync: La tua app per il benessere con AI. Trova professionisti certificati e tieni traccia della tua salute.">
+    <!-- Fonts: Outfit (Headings) and Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Vai al contenuto principale</a>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" aria-label="WellSync Home">
+                <i class="fa-solid fa-leaf"></i> WellSync
+            </a>
+
+            <button class="mobile-menu-toggle" aria-label="Apri menu" aria-expanded="false"
+                aria-controls="primary-navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav id="primary-navigation" class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#features">Funzionalità</a></li>
+                    <li><a href="#testimonials">Recensioni</a></li>
+                    <li><a href="#pricing">Prezzi</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Attiva Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <a href="#download" class="btn btn-primary">Scarica Ora</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Landing Page Content (Default) -->
+        <div id="landing-view">
+            <!-- Hero Section -->
+            <section class="hero" id="home">
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <h1 class="fade-in-up">Il Tuo Benessere, Sincronizzato con l'AI.</h1>
+                        <p class="fade-in-up delay-1">WellSync unisce l'intelligenza artificiale e professionisti
+                            certificati per offrirti un percorso di salute personalizzato in ogni momento.</p>
+                        <div class="hero-cta fade-in-up delay-2">
+                            <button class="btn btn-primary btn-large start-app-btn">
+                                <i class="fa-solid fa-rocket"></i> Inizia Ora
+                            </button>
+                            <a href="#features" class="btn btn-outline btn-large">Scopri di più</a>
+                        </div>
+                    </div>
+                    <div class="hero-image fade-in-up delay-3">
+                        <div class="mockup-placeholder">
+                            <div class="circle-decoration"></div>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features, Testimonials, Pricing, FAQ, Bottom CTA (kept as is but wrapped) -->
+            <section class="features" id="features">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2>Perché scegliere WellSync?</h2>
+                        <p>Scopri gli strumenti pensati per migliorare la tua vita quotidiana.</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="icon-wrapper"><i class="fa-solid fa-message"></i></div>
+                            <h3>AI Coach Personale</h3>
+                            <p>Ricevi consigli e routine su misura create dalla nostra IA.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="icon-wrapper"><i class="fa-solid fa-user-group"></i></div>
+                            <h3>Professionisti Certificati</h3>
+                            <p>Connettiti subito con esperti del settore per consulenze mirate.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="icon-wrapper"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <h3>Tracking della Salute</h3>
+                            <p>Monitora ogni aspetto della tua salute in un'unica dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing section with revised prices -->
+            <section class="pricing" id="pricing">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2>Piani e Prezzi</h2>
+                        <p>Scegli il piano più adatto al tuo percorso di benessere.</p>
+                    </div>
+                    <div class="pricing-grid">
+                        <div class="pricing-card">
+                            <h3>Free</h3>
+                            <div class="price">€0<span>/mese</span></div>
+                            <ul class="features-list">
+                                <li><i class="fa-solid fa-check"></i> Dashboard base</li>
+                                <li><i class="fa-solid fa-check"></i> AI limitata</li>
+                                <li class="disabled"><i class="fa-solid fa-xmark"></i> Schede Allenamento</li>
+                                <li class="disabled"><i class="fa-solid fa-xmark"></i> Piani Alimentari</li>
+                            </ul>
+                            <button class="btn btn-outline btn-full start-app-btn">Inizia Gratis</button>
+                        </div>
+                        <div class="pricing-card popular">
+                            <div class="badge">Consigliato</div>
+                            <h3>Premium</h3>
+                            <div class="price">€12.99<span>/mese</span></div>
+                            <ul class="features-list">
+                                <li><i class="fa-solid fa-check"></i> Tutto Sbloccato</li>
+                                <li><i class="fa-solid fa-check"></i> AI Coach Illimitato</li>
+                                <li><i class="fa-solid fa-check"></i> Piani Personalizzati</li>
+                                <li><i class="fa-solid fa-check"></i> Senza pubblicità</li>
+                            </ul>
+                            <button class="btn btn-primary btn-full start-app-btn">Prova Premium</button>
+                        </div>
+                        <div class="pricing-card">
+                            <h3>Pro</h3>
+                            <div class="price">€29.99<span>/mese</span></div>
+                            <ul class="features-list">
+                                <li><i class="fa-solid fa-check"></i> Tutto nel piano Premium</li>
+                                <li><i class="fa-solid fa-check"></i> Esperti Illimitati</li>
+                                <li><i class="fa-solid fa-check"></i> Analytics Avanzate</li>
+                                <li><i class="fa-solid fa-check"></i> Supporto VIP</li>
+                            </ul>
+                            <button class="btn btn-outline btn-full start-app-btn">Scegli Pro</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- App View (Hidden by default) -->
+        <div id="app-view" style="display: none;">
+            <!-- Onboarding Section -->
+            <section id="onboarding" class="app-section">
+                <div class="container narrow-container">
+                    <div id="onboarding-steps">
+                        <!-- Step 1: Welcome & Account -->
+                        <div class="onboarding-step active" data-step="1">
+                            <h2>Benvenuto in WellSync</h2>
+                            <p>Iniziamo creando il tuo profilo personalizzato.</p>
+                            <form class="app-form" id="login-form">
+                                <div class="form-group">
+                                    <label for="user-name">Nome Completo</label>
+                                    <input type="text" id="user-name" placeholder="Mario Rossi" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-email">Email</label>
+                                    <input type="email" id="user-email" placeholder="mario@esempio.com" required>
+                                </div>
+                                <button type="button" class="btn btn-primary btn-full next-step">Avanti <i
+                                        class="fa-solid fa-arrow-right"></i></button>
+                            </form>
+                        </div>
+                        <!-- Step 2: Body Configuration -->
+                        <div class="onboarding-step" data-step="2">
+                            <h2>Configura il tuo corpo</h2>
+                            <p>Questi dati aiuteranno l'AI a personalizzare i tuoi piani.</p>
+                            <form class="app-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="user-age">Età</label>
+                                        <input type="number" id="user-age" value="25">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user-weight">Peso (kg)</label>
+                                        <input type="number" id="user-weight" value="70">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="user-height">Altezza (cm)</label>
+                                        <input type="number" id="user-height" value="175">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-goal">Obiettivo Principale</label>
+                                    <select id="user-goal">
+                                        <option value="massa">Aumento Massa</option>
+                                        <option value="dimagrimento">Dimagrimento</option>
+                                        <option value="forza">Forza Pura</option>
+                                        <option value="definizione">Definizione</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-level">Livello Fitness</label>
+                                    <select id="user-level">
+                                        <option value="principiante">Principiante</option>
+                                        <option value="intermedio">Intermedio</option>
+                                        <option value="avanzato">Avanzato</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="user-days">Giorni disponibili (settimana)</label>
+                                    <input type="range" id="user-days" min="1" max="7" value="3">
+                                    <span id="days-val">3 giorni</span>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-outline prev-step">Indietro</button>
+                                    <button type="button" class="btn btn-primary next-step">Completa <i
+                                            class="fa-solid fa-check"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="app-section" style="display: none;">
+                <div class="container">
+                    <div class="dashboard-header">
+                        <h2>Ciao, <span id="display-name">Utente</span>! 👋</h2>
+                        <p>Ecco la tua panoramica giornaliera.</p>
+                    </div>
+                    <div class="dashboard-grid">
+                        <div class="stats-card clickable" onclick="app.showPremium('Analytics Avanzate')">
+                            <div class="stats-icon"><i class="fa-solid fa-fire"></i></div>
+                            <div class="stats-info">
+                                <h3>Calorie</h3>
+                                <p><span class="stats-val">1254</span> / 2200 kcal</p>
+                            </div>
+                        </div>
+                        <div class="stats-card clickable">
+                            <div class="stats-icon"><i class="fa-solid fa-shoe-prints"></i></div>
+                            <div class="stats-info">
+                                <h3>Passi</h3>
+                                <p><span class="stats-val">8432</span> / 10000</p>
+                            </div>
+                        </div>
+                        <div class="stats-card clickable" id="water-card">
+                            <div class="stats-icon"><i class="fa-solid fa-droplet"></i></div>
+                            <div class="stats-info">
+                                <h3>Acqua</h3>
+                                <p><span class="stats-val" id="water-val">1.5</span> / 2.5 L</p>
+                            </div>
+                        </div>
+                        <div class="stats-card clickable">
+                            <div class="stats-icon"><i class="fa-solid fa-bed"></i></div>
+                            <div class="stats-info">
+                                <h3>Sonno</h3>
+                                <p><span class="stats-val">7.2</span> / 8 h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="actions-grid">
+                        <button class="action-btn" id="nav-coach">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>AI Coach</span>
+                        </button>
+                        <button class="action-btn" id="nav-workout">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>Scheda Palestra</span>
+                        </button>
+                        <button class="action-btn" id="nav-diet">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>Piano Alimentare</span>
+                        </button>
+                        <button class="action-btn" id="nav-pros">
+                            <i class="fa-solid fa-user-doctor"></i>
+                            <span>Esperti</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Coach Section -->
+            <section id="coach" class="app-section" style="display: none;">
+                <div class="container chat-container">
+                    <header class="view-header">
+                        <button class="back-to-dash"><i class="fa-solid fa-arrow-left"></i></button>
+                        <h2>AI Coach</h2>
+                    </header>
+                    <div id="chat-messages" class="chat-messages">
+                        <div class="message ai-message">
+                            Ciao! Sono il tuo coach virtuale. Come posso aiutarti oggi con il tuo allenamento o
+                            alimentazione?
+                        </div>
+                    </div>
+                    <form id="chat-form" class="chat-input-area">
+                        <input type="text" id="chat-input" placeholder="Chiedi qualcosa...">
+                        <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Workout Generator Section -->
+            <section id="workout" class="app-section" style="display: none;">
+                <div class="container">
+                    <header class="view-header">
+                        <button class="back-to-dash"><i class="fa-solid fa-arrow-left"></i></button>
+                        <h2>Scheda Allenamento</h2>
+                    </header>
+                    <div id="workout-content" class="plan-content">
+                        <!-- Content generated via JS -->
+                    </div>
+                    <button class="btn btn-primary btn-full" id="generate-workout">Genera Nuova Scheda AI</button>
+                </div>
+            </section>
+
+            <!-- Diet Generator Section -->
+            <section id="diet" class="app-section" style="display: none;">
+                <div class="container">
+                    <header class="view-header">
+                        <button class="back-to-dash"><i class="fa-solid fa-arrow-left"></i></button>
+                        <h2>Piano Alimentare</h2>
+                    </header>
+                    <div id="diet-content" class="plan-content">
+                        <!-- Content generated via JS -->
+                    </div>
+                    <button class="btn btn-primary btn-full" id="generate-diet">Genera Piano Alimentare AI</button>
+                </div>
+            </section>
+
+            <!-- Professionals Section -->
+            <section id="professionals" class="app-section" style="display: none;">
+                <div class="container">
+                    <header class="view-header">
+                        <button class="back-to-dash"><i class="fa-solid fa-arrow-left"></i></button>
+                        <h2>I Nostri Esperti</h2>
+                    </header>
+                    <div class="pros-list">
+                        <div class="pro-card">
+                            <div class="pro-img"><i class="fa-solid fa-user-tie"></i></div>
+                            <div class="pro-details">
+                                <h3>Dr. Valerio Neri</h3>
+                                <p>Nutrizionista Clinico</p>
+                                <button class="btn btn-outline btn-sm"
+                                    onclick="app.showPremium('Prenotazione Diretta')">Prenota</button>
+                            </div>
+                        </div>
+                        <div class="pro-card">
+                            <div class="pro-img"><i class="fa-solid fa-user-ninja"></i></div>
+                            <div class="pro-details">
+                                <h3>Elena Rossini</h3>
+                                <p>Personal Trainer Elite</p>
+                                <button class="btn btn-outline btn-sm"
+                                    onclick="app.showPremium('Prenotazione Diretta')">Prenota</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Paywall Modal -->
+        <div id="paywall-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+                <div class="paywall-header">
+                    <i class="fa-solid fa-crown gold-icon"></i>
+                    <h2>Funzione Premium</h2>
+                    <p>Sblocca questa funzione e molto altro con WellSync Premium.</p>
+                </div>
+                <div class="paywall-benefits">
+                    <p><i class="fa-solid fa-check"></i> Schede Allenamento illimitate</p>
+                    <p><i class="fa-solid fa-check"></i> Piani Alimentari su misura</p>
+                    <p><i class="fa-solid fa-check"></i> AI Coach Pro attivo 24/7</p>
+                </div>
+                <button class="btn btn-primary btn-full">Passa a Premium - €12.99</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Will be hidden in App View) -->
+    <footer class="footer" id="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fa-solid fa-leaf"></i> WellSync
+                    </a>
+                    <p>La tua app all-in-one per il benessere fisico e mentale, guidata dall'AI.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Prodotto</h4>
+                    <ul>
+                        <li><a href="#features">Funzionalità</a></li>
+                        <li><a href="#pricing">Prezzi</a></li>
+                        <li><a href="#">Aggiornamenti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Azienda</h4>
+                    <ul>
+                        <li><a href="#">Chi Siamo</a></li>
+                        <li><a href="#">I Nostri Esperti</a></li>
+                        <li><a href="#">Carriere</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legale</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Termini di Servizio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 WellSync. Tutti i diritti riservati.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
